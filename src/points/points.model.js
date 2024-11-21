@@ -3,8 +3,8 @@ const { Schema, model } = require('mongoose')
 const PointSchema = new Schema({
   points: {
     type: Number,
-    required: [true, 'Los puntos son obligatorios'],
-    unique: true
+    required: [true, 'Los puntos son obligatorios']
+    // unique: true
   },
   user: {
     type: Schema.Types.ObjectId,

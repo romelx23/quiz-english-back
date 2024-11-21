@@ -13,10 +13,10 @@ class Server {
       auth: '/api/auth',
       files: '/api/file',
       // area: '/api/area',
-      services: '/api/service',
+      // services: '/api/service',
       // search: '/api/search',
       // category: '/api/category',
-      uploads: '/api/uploads',
+      // uploads: '/api/uploads',
       user: '/api/user',
       points: '/api/points'
     }
@@ -64,10 +64,10 @@ class Server {
     this.app.use(this.paths.auth, require('../auth/auth.routes'))
     // this.app.use(this.paths.area, require('../area/area.routes'))
     this.app.use(this.paths.files, require('../files/file.routes'))
-    this.app.use(this.paths.services, require('../services/services.routes'))
+    // this.app.use(this.paths.services, require('../services/services.routes'))
     // this.app.use(this.paths.search, require('../buscar/buscar.routes'))
     // this.app.use(this.paths.category, require('../category/category.routes'))
-    this.app.use(this.paths.uploads, require('../archivos/upload.routes'))
+    // this.app.use(this.paths.uploads, require('../archivos/upload.routes'))
     this.app.use(this.paths.user, require('../user/user.routes'))
     this.app.use(this.paths.points, require('../points/points.routes'))
   }
